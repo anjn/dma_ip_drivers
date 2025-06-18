@@ -276,6 +276,7 @@ void qdma_fetch_version_details(uint8_t is_vf, uint32_t version_reg_val,
 			version_info->ip_type = QDMA_SOFT_IP;
 			break;
 		case 1:
+		case 2:
 			version_info->ip_type = EQDMA_SOFT_IP;
 			break;
 		default:

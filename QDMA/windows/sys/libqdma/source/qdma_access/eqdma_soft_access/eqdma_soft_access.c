@@ -4327,7 +4327,7 @@ int eqdma_get_user_bar(void *dev_hndl, uint8_t is_vf,
 		qdma_log_error("%s: Bar not found, err:%d\n",
 					__func__,
 					-QDMA_ERR_HWACC_BAR_NOT_FOUND);
-		return -QDMA_ERR_HWACC_BAR_NOT_FOUND;
+		//return -QDMA_ERR_HWACC_BAR_NOT_FOUND;
 	}
 
 	return QDMA_SUCCESS;
