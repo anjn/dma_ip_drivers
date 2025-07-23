@@ -130,7 +130,7 @@ void *qdma_calloc(
     uint32_t size)
 {
     size_t total_size = (size_t)num_blocks * size;
-    void *ptr = ExAllocatePoolWithTag(NonPagedPoolNx, total_size, QDMA_MEMPOOL_TAG);
+    void* ptr = ExAllocatePool2(POOL_FLAG_NON_PAGED, total_size, QDMA_MEMPOOL_TAG);
     if (ptr != NULL) {
         RtlZeroMemory(ptr, total_size);
     }
